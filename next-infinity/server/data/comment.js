@@ -11,7 +11,12 @@ const commentsData = [
         comment:"this is so bad",
         image:"https://images.unsplash.com/photo-1621259045399-9158ddb04e41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
     },
-
+    {
+        id:3,
+        userName:"vvo",
+        comment:"this is so bad",
+        image:"https://images.unsplash.com/photo-1621259045399-9158ddb04e41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+    },
 ]
 
 
