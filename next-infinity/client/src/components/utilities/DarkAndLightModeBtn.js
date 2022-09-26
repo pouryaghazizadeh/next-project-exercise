@@ -1,6 +1,6 @@
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { useTheme, useThemeUpdate } from '../context/ThemeContext';
+import { useTheme, useThemeUpdate } from '../../context/ThemeContext';
 import { makeStyles } from '@mui/styles'
 import { IconButton } from '@mui/material';
 const useStyles = makeStyles((theme) => ({

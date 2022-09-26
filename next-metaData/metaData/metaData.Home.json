@@ -1,0 +1,29 @@
+[
+    {
+        "type":"head",
+        "children":[
+          {
+            "type":"meta",
+            "props":[
+              {
+                "content":"origin",
+                "name":"home-page" 
+                
+              },
+              {
+                "content":"main-origin",
+              "itemprop":"hi home"
+            }
+            ]   
+          },
+          {
+            "type":"title",
+            "props":[
+                {
+                    "text":"home page"   
+                }
+            ]
+          }
+        ]
+      }
+]

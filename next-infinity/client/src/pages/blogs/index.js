@@ -15,14 +15,14 @@ function Blogs( { blogs }) {
   console.log(data);
   return (
     <div>Blogs page
-
+{/* 
       {
         data?data.map(blog=>{
           return(<Link key={blog.id} passHref href={`/blogs/${blog.id}`}>
             <h3>{blog.title}</h3>
           </Link>)
         }):<h2>Loading...</h2>
-      }
+      } */}
     </div>
   )
 }

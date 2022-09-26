@@ -17,7 +17,8 @@ function AboutUs({aboutUs}) {
 console.log(data);
   return (
     <div>
-        about us page
+
+        {/* about us page
         {
           data? data.map((value)=>{
             return(
@@ -30,7 +31,7 @@ console.log(data);
 
               </div>)
           }):<h2>loading...</h2>
-        }
+        } */}
 
     </div>
   )

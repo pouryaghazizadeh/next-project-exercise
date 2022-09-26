@@ -23,7 +23,7 @@ function Comments({ comments }) {
   // if (!data) { }
   return (
     <div>
-      hi there
+      {/* hi there
       {
         data ?
           data.map((response) => {
@@ -33,7 +33,7 @@ function Comments({ comments }) {
             </div>)
 
           }) : <h2>Loading...</h2>
-      }
+      } */}
     </div>
   )
 }
