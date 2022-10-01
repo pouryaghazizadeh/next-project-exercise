@@ -2,7 +2,7 @@ const express = require("express")
 const commentsData = require("../data/comment")
 const cors = require("cors")
 const app = express()
-
+const todoData  =require("../data/todo")
 app.use(cors())
 // send data to comments page
 

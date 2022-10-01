@@ -1,12 +1,14 @@
+// { Component,router, pageProps }
+import {useUpdateUser,useUser,UserProvider} from "../context/userContext"
+function MyApp({Component,pageProps}) {
 
-function MyApp({ Component, pageProps }) {
+
   return (
-    //   <ContextThemeProvider>
-        // <Header/>
-        <Component {...pageProps} />
-        // <CssBaseline/>
-    //   </ContextThemeProvider>
-  )
+    <UserProvider>
+      <Component {...pageProps} />
+    </UserProvider>
+     )
 }
+
 
 export default MyApp

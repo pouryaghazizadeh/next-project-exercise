@@ -1,20 +1,20 @@
-import axios from "axios";
-import useSWR from "swr";
-const fetcher = (url) => axios.get(url).then(res => res.data)
-export async function getServerSideProps() {
-  const comments = await fetcher("http://localhost:3450/comments")
-  // console.log(comments);
-  return {
-    props: { comments },// fallback: falsem 
-  }
-}
+// import axios from "axios";
+// import useSWR from "swr";
+// const fetcher = (url) => axios.get(url).then(res => res.data)
+// export async function getServerSideProps() {
+//   const comments = await fetcher("http://localhost:3450/comments")
+//   // console.log(comments);
+//   return {
+//     props: { comments },// fallback: falsem 
+//   }
+// }
 
 
-function Comments({ comments }) {
-  const { data } = useSWR("http://localhost:3450/comments", fetcher, { comments })
+function Comments() {
+  // const { data } = useSWR("http://localhost:3450/comments", fetcher, { comments })
 
 
-  console.log("this is data", data);
+  // console.log("this is data", data);
 
   //  console.log("dataaaa",data.map((data)=>console.log(data)))
 
@@ -23,6 +23,7 @@ function Comments({ comments }) {
   // if (!data) { }
   return (
     <div>
+      i there
       {/* hi there
       {
         data ?

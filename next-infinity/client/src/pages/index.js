@@ -1,7 +1,6 @@
-import metaDataHome from "../metaData/metaData.Home.json"
-import RegisterComponents from "../layoutEngin/registerHeader"
-import {HeadComponent as Head} from "../components/molecules/Head"
+// import metaDataHome from "../metaData/metaData.Home.json"
 import Title from "../components/atoms/Title"
+import { HeadComponent as Head } from "../components/molecules/Head"
 export default function Home() {
   return (
   <>

@@ -1,62 +1,65 @@
 import {styled } from '@mui/material/styles';
-import { Input } from "../components/atoms/Input"
-import {Button}from "../components/atoms/Button"
-// styles 
-const  Root = styled("main")(theme=>{
-  return({
-    minHeight:"100vh",
-    display:"flex",
-    justifyContent:"center",
-    alignItems:"center",
-  })
-})
-const ContainerForm = styled("form")(theme=>{
-  return({
+import {useAuth}from "../hooks/useAuth"
+// // styles 
+// const  Root = styled("main")(theme=>{
+//   return({
+//     minHeight:"100vh",
+//     display:"flex",
+//     justifyContent:"center",
+//     alignItems:"center",
+//   })
+// })
+// const ContainerForm = styled("form")(theme=>{
+//   return({
 
-      display:"flex",
-      flexDirection:"column",
-      gap:"1.5rem",
-      width:"30%",
-      height:"60%",
-      padding:"1rem",
+//       display:"flex",
+//       flexDirection:"column",
+//       gap:"1.5rem",
+//       width:"30%",
+//       height:"60%",
+//       padding:"1rem",
 
-  })
-})
-
+//   })
+// })
 
 
 
-const metaDataRegister = [
-  {
-    id: "I1",
-    placeholder: "enter your name",
-    type: "text",
-    variant: "outlined",
-    color: "primary",
-    size:"small"
-  },
-  {
-    id: "I2",
-    placeholder: "enter your email",
-    type: "email",
-    variant: "outlined",
-    color: "primary",
-    size:"small"
-  },
-  {
-    id: "I3",
-    placeholder: "enter your password",
-    type: "password",
-    variant: "outlined",
-    color: "primary",
-    size:"small"
-  },
 
-]
+// const metaDataRegister = [
+//   {
+//     id: "I1",
+//     placeholder: "enter your name",
+//     type: "text",
+//     variant: "outlined",
+//     color: "primary",
+//     size:"small"
+//   },
+//   {
+//     id: "I2",
+//     placeholder: "enter your email",
+//     type: "email",
+//     variant: "outlined",
+//     color: "primary",
+//     size:"small"
+//   },
+//   {
+//     id: "I3",
+//     placeholder: "enter your password",
+//     type: "password",
+//     variant: "outlined",
+//     color: "primary",
+//     size:"small"
+//   },
+
+// ]
 
 function Register() {
+
+const userObj = {userName:"pourya",role:"admin",email:"pourya@gmail.com"}
+useAuth(userObj)
   return (
-    <Root>
+    <div>
+      register
       {/* <ContainerForm>
         {
           metaDataRegister.map(attribute => {
@@ -77,7 +80,7 @@ function Register() {
       </ContainerForm> */}
 
 
-    </Root>
+    </div>
   )
 }
 
