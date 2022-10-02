@@ -1,5 +1,5 @@
 import { TextField } from "@mui/material"
-function Input({ rest }) {
+function Input({ ...rest }) {
     return (
         <TextField {...rest} />
     )

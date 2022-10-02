@@ -1,6 +1,5 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
-import {useAuth}from "../hooks/useAuth"
 // this context have user that come from backend
 const UserContext= createContext();
 // this context contain updated user
@@ -8,7 +7,7 @@ const UserUpdateContext = createContext();
 
 // custom hooks for ThemeContext Consumers
 // with this hook you can use user
-export const useUser= () => useContext(UserContext);
+export const useUser=() => useContext(UserContext);
 // with this hook you can get and update your user
 export const useUpdateUser = () => useContext( UserUpdateContext);
 
@@ -24,7 +23,7 @@ export const UserProvider = ({ children }) => {
   console.log('user', user)
 
     return (
-      <UserContext.Provider value={user}>
+      <UserContext.Provider value={{userName:"pourya",role:"user",email:"pourya@gmail.com"}}>
         <UserUpdateContext.Provider value={user}>
           {children}
         </UserUpdateContext.Provider>

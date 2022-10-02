@@ -4,9 +4,9 @@
 // export async function getServerSideProps() {
 //   const comments = await fetcher("http://localhost:3450/comments")
 //   // console.log(comments);
-//   return {
-//     props: { comments },// fallback: falsem 
-//   }
+  // return {
+  //   props: { comments },// fallback: falsem 
+  // }
 // }
 
 

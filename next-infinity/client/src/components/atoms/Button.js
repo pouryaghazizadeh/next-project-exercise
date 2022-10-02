@@ -32,16 +32,8 @@ export const Button = ({ text, endIcon, endIconTop, startIcon, startIconTop, ...
     return (
         <MaterialBtn
             // them classes overwrite and change default class mui for more information about the available classes check the document button mui
-            classes={{
-                contained,
-                outlined,
-                text:textVariant,
-                textSizeSmall,
-                textSizeLarge
-            }}
-            // if you want your icon be at the top of your body button, you need to use endIconTop,startIconTop props else with endIcon and startIcon your icon will be center 
-            endIcon={endIconTop ? <Box> {endIconTop} </Box> : endIcon}
-            startIcon={startIconTop ? <Box> {startIconTop} </Box> : startIcon}
+
+
             // Do not touch tree props.These props will disable some default effects.
             disableElevation
             disableFocusRipple
